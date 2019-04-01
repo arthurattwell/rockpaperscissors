@@ -6,7 +6,7 @@ textarea {
     font-family: $font-main;
     font-size: inherit;
     color: inherit;
-    border: 1px solid $background-color-mid;
+    border: 1px solid $text-color-mid;
     display: block;
     margin: 0 0 ($line-height * 1em) 0;
     width: 100%;
@@ -34,12 +34,15 @@ textarea {
 // Buttons
 
 a.button, input[type="submit"] {
-	background-color: $background-color-mid;
+    font-weight: 600;
+	background-color: $rps-orange;
 	padding: 0.5em 1em;
-	margin: 0 0.5em 0.5em 0;
+	margin: 0 0.5em 0 0;
 	border-radius: $border-radius;
+    border-style: none; // esp for button elements
 	display: inline-block;
 	color: $text-color-light;
+    cursor: pointer;
 	&.light {
 		background-color: $background-color-light;
 		box-shadow: none;
@@ -47,7 +50,7 @@ a.button, input[type="submit"] {
 		border: 1px solid $background-color-dark;
 	}
 	&:hover {
-		box-shadow: 0 0.05em 0.3em $background-color-dark;
+		box-shadow: 0 0.05em 0.1em $background-color-dark;
 	}
 }
 input[type="submit"] {

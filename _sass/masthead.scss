@@ -3,25 +3,24 @@
 .masthead {
 	background-color: $masthead-background-color;
 	color: $masthead-text-color;
-	display: table;
-	height: 2em;
+	// display: table;
+	// height: 5em;
 	overflow-y: hidden; // Prevents horizontal scrolling
 	position: relative;
 	width: 100%;
 	z-index: 2; // above the nav bar
 	.logo {
 		// Template styles assume a square logo
-		display: table-cell;
+		// display: table-cell;
 		padding: 0.5em;
-		width: 2em;
 		vertical-align: middle;
 		line-height: 0;
 		img {
-			max-height: 2em;
+			max-height: 5em;
 		}
 	}
 	.identity {
-		display: table;
+		// display: table;
 		vertical-align: middle;
 		padding: 0.5em;
 		.name {
@@ -34,11 +33,15 @@
 			}
 		}
 		.tagline {
-			display: table-row;
-			padding: 0 0 0 1em;
+			display: block;
+			padding: 0.5em 0.5em 0.75em 5.75em;
+			margin: 1em 0 0 -3em;
+			background-color: $rps-blue;
+			color: white;
 			vertical-align: middle;
 			font-size: 0.7em;
 			font-family: $font-main;
+			width: 9em;
 		}
 	}
 }

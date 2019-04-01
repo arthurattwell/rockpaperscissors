@@ -11,7 +11,7 @@
 
 // Sizes
 $content-width: 40em;
-$side-nav-width: 10em;
+$side-nav-width: 0;
 $dropdown-nav-width: 10em;
 $line-height: 1.4;
 $border-radius: 0.02em;
@@ -33,8 +33,12 @@ $caption-font-size: 0.8em;
 // @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i');
 
 // Colour palette
+$rps-blue: #007e93;
+$rps-purple: #9a4293;
+$rps-orange: #e96a08;
+
 $background-color-dark: #2d7375;
-$background-color-mid: #85c6c2;
+$background-color-mid: #ffffff;
 $background-color-light: #ffffff;
 $text-color-dark: #222222;
 $text-color-mid: #e1e1e1;
@@ -45,7 +49,7 @@ $side-nav-color: $background-color-light;
 $dropdown-nav-color: $background-color-mid;
 $dropdown-nav-icon-color: $text-color-mid;
 $footer-background-color: $background-color-mid;
-$link-color: #2d4f75;
+$link-color: $rps-blue;
 
 // Media query breakpoints
 $break-point-l: $content-width + $side-nav-width + 10em;
@@ -73,3 +77,37 @@ $break-point-xl: ($content-width * 2) + $side-nav-width + 10em;
 // Custom CSS
 // Add your own styles below to override
 // the template partials just imported.
+
+// Typography
+.content {
+    a {
+        font-weight: 600;
+    }
+}
+
+// Nav, hidden for now
+.nav-wrapper {
+    display: none;
+}
+
+// Home page banner text
+
+.banner {
+    font-size: $font-size * 1.5;
+    font-weight: 600;
+    line-height: 1.1;
+    background-color: $rps-purple;
+    margin: 0 -1000em 1em -0.75em;
+    padding: 0.5em 1000em 0.5em 0.75em;
+    color: #222222;
+    p {
+        margin-bottom: 0.5em;
+        &:first-of-type {
+            color: white;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
