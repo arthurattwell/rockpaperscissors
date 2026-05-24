@@ -11,11 +11,7 @@ defaulting to src. {% endcomment %}
 	{% assign file-extension = include.src | split: "." | last %}
 {% endif %}
 
-{% comment %} Adjust the value of `sizes` if your site design does not need
-full-width images everywhere. Here is a guide:
-https://builtvisible.com/responsive-images-for-busy-people-a-quick-primer/ {% endcomment %}
 <img
-    sizes="auto"
     src="{{ site.baseurl }}/images/{{ image }}.{{ file-extension }}"
     srcset="{{ site.baseurl }}/images/{{ image }}-320.{{ file-extension }} 320w,
     {{ site.baseurl }}/images/{{ image }}-640.{{ file-extension }} 640w,
